@@ -1,0 +1,51 @@
+:root {
+  --ink: #0f1f1a;
+  --paper: #f3efe4;
+  --muted: #5c6b64;
+  --gold: #d4a017;
+  --gold-bright: #f0c43a;
+  --first: #c9a227;
+  --second: #3d8b7a;
+  --third: #4a6fa5;
+  --danger: #b84a3a;
+  --surface: rgba(243, 239, 228, 0.92);
+  --line: rgba(15, 31, 26, 0.12);
+  --display: 'Black Han Sans', sans-serif;
+  --body: 'Noto Sans KR', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--body);
+  color: var(--ink);
+  background:
+    radial-gradient(ellipse 80% 50% at 15% 10%, rgba(212, 160, 23, 0.22), transparent 55%),
+    radial-gradient(ellipse 70% 45% at 90% 85%, rgba(61, 139, 122, 0.28), transparent 50%),
+    linear-gradient(160deg, #16352c 0%, #0f1f1a 45%, #1a2e3a 100%);
+  background-attachment: fixed;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+#root {
+  min-height: 100svh;
+}
